@@ -13,5 +13,12 @@ def index():
     return render_template("/index.html", content=data)
 
 
+@app.route("/indexAdd.html", methods=["GET"])
+@app.route("/add", methods=["GET"])
+def addPage():
+    data = dbHandler.listExtension()
+    return render_template("/indexAdd.html", content=data)
+
+
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5000)
