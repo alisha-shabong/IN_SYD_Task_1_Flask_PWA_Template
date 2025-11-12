@@ -7,3 +7,11 @@ def listExtension():
     data = cur.execute("SELECT * FROM extension").fetchall()
     con.close()
     return data
+
+
+def listBWCatsPage():
+    con = sql.connect(".database/data_source.db")
+    cur = con.cursor()
+    data = cur.execute("SELECT * FROM BWCatsPage").fetchall()
+    con.close()
+    return data
