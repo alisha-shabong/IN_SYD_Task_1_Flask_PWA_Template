@@ -2,12 +2,8 @@
 <div class="container">
   {% for row in content %}
   <div class="card">
-    <img class="card-image" src="{{ row[4] }}" alt="Image of {{ row[1] }}." />
-    <h1 class="card-name">{{ row[1] }}</h1>
-    <p class="card-about">{{ row[3] }}</p>
-    <a class="card-link" href="{{ row[2] }}"
-      ><button class="btn">Read More</button></a
-    >
+    <img class="card-image" src="{{ row[4] }}" alt="Image of a {{ row[1] }} cat." />
+    <a class="card-link" href="{{ row[2] }}">
   </div>
   {% endfor %}
 </div>

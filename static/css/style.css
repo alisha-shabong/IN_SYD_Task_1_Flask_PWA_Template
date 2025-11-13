@@ -107,15 +107,15 @@ nav h1 {
   margin: 0 1rem;
   padding: 0.25rem 2rem;
   transition: all 0.25s ease-in-out;
-  background: hsl(110, 21%, 93%);
-  color: hsl(141, 100%, 22%);
+  background: hsl(38, 22%, 93%);
+  color: #d67845;
   margin-bottom: 1rem;
 }
 
 .btn:focus,
 .btn:hover {
   box-shadow: 1px 1px 2px rgba(21, 21, 21, 0.2);
-  background: hsl(111, 21%, 86%);
+  background: hsl(35, 100%, 97%);
 }
 
 .about-container {
